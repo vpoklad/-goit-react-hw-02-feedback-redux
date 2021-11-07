@@ -1,21 +1,24 @@
 // import './App.css';
 
-import { Component } from 'react/cjs/react.production.min';
 
-class App extends Component {
-  state = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-  };
+import Statistics from './components/Statistics/Statistics';
+import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions';
+import Section from './components/Section/Section';
 
-  render() {
-    return (
-      <div className="app">
-        <h1>Hello</h1>
-      </div>
-    );
-  }
-}
+
+
+function App() {  
+
+  
+  return (<div className="app">
+    <Section title="Please leave feadback">
+      <FeedbackOptions/>
+    </Section>
+    <Statistics />
+  </div>
+  );
+    
+  
+};
 
 export default App;
